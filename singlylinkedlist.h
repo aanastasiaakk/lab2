@@ -1,0 +1,8 @@
+//
+// Created by Nastya on 27/04/2024.
+//
+
+#ifndef LAB2_SINGLYLINKEDLIST_H
+#define LAB2_SINGLYLINKEDLIST_H
+
+#endif //LAB2_SINGLYLINKEDLIST_H
