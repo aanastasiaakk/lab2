@@ -10,7 +10,7 @@ int main(){
         try {
             SinglyLinkedList<int> sll;
             sll.addToBack(8);
-            sll.addToBack(2);
+            sll.addToBack(90);
             sll.addToBack(3);
             cout << "Singly Linked List: ";
             sll.display();
@@ -18,9 +18,9 @@ int main(){
 
 
             DoublyLinkedList<string> dll;
-            dll.addToFront("World");
-            dll.addToFront("Hello");
-            dll.addToBack("!");
+            dll.addToFront("I");
+            dll.addToFront("am");
+            dll.addToBack("Anastasia");
             cout << "Doubly Linked List: ";
             dll.display();
             cout << "Size: " << dll.getSize() << endl;

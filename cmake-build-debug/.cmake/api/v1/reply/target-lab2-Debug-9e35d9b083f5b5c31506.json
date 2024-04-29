@@ -97,7 +97,10 @@
 			"sourceIndexes" : 
 			[
 				1,
-				2
+				2,
+				3,
+				4,
+				5
 			]
 		}
 	],
@@ -117,6 +120,21 @@
 		{
 			"backtrace" : 1,
 			"path" : "doublylinkedlist.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Queue.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Stack.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "CircularQueue.h",
 			"sourceGroupIndex" : 1
 		}
 	],
