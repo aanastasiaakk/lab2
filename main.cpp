@@ -3,6 +3,7 @@
 #include <stdexcept>
 #include "singlylinkedlist.h"
 #include "doublylinkedlist.h"
+#include "Queue.h"
 
 using namespace std;
 
@@ -37,8 +38,27 @@ int main(){
             } else {
                 cout << "Element not found in doubly linked list." << endl;
             }
+            cout << endl;
+
+            QueueArray<int> queueArray(5);
+            queueArray.Enqueue(9);
+            queueArray.Enqueue(3);
+            queueArray.Enqueue(2);
+            queueArray.Enqueue(3);
+            cout << "Peek: " << queueArray.Peek() << endl;
+            cout << "Dequeue: " << queueArray.Dequeue() << endl;
+            cout << "Peek: " << queueArray.Peek() << endl;
+
+            QueueLinkedList<string>queueLinkedList;
+            queueLinkedList.Enqueue("HI");
+            queueLinkedList.Enqueue("CAT");
+            queueLinkedList.Enqueue("DOG");
+            cout << "Peek: " << queueLinkedList.Peek() << endl;
+            cout << "Dequeue: " << queueLinkedList.Dequeue() << endl;
+            cout << "Peek: " << queueLinkedList.Peek() << endl;
         } catch (const exception& e) {
-            cerr << "Exception: " << e.what() << std::endl;
+            cerr << "Exception: " << e.what() << endl;
+
         }
 
         return 0;
