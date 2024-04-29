@@ -60,7 +60,7 @@ int main(){
             cout << "Front after dequeue: " << circularQueueArray.peek() << endl;
             cout << endl;
 
-            StackArray<int> stackArray(4);
+            StackArray<int> stackArray(3 );
             stackArray.push(1);
             stackArray.push(2);
             stackArray.push(3);
