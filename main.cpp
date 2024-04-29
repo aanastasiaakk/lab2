@@ -4,6 +4,8 @@
 #include "singlylinkedlist.h"
 #include "doublylinkedlist.h"
 #include "Queue.h"
+#include "CircularQueue.h"
+#include "Stack.h"
 
 using namespace std;
 
@@ -40,15 +42,6 @@ int main(){
             }
             cout << endl;
 
-            QueueArray<int> queueArray(5);
-            queueArray.Enqueue(9);
-            queueArray.Enqueue(3);
-            queueArray.Enqueue(2);
-            queueArray.Enqueue(3);
-            cout << "Peek: " << queueArray.Peek() << endl;
-            cout << "Dequeue: " << queueArray.Dequeue() << endl;
-            cout << "Peek: " << queueArray.Peek() << endl;
-
             QueueLinkedList<string>queueLinkedList;
             queueLinkedList.Enqueue("HI");
             queueLinkedList.Enqueue("CAT");
@@ -56,6 +49,27 @@ int main(){
             cout << "Peek: " << queueLinkedList.Peek() << endl;
             cout << "Dequeue: " << queueLinkedList.Dequeue() << endl;
             cout << "Peek: " << queueLinkedList.Peek() << endl;
+            cout << endl;
+
+            CircularQueueArray<int> circularQueueArray(5);
+            circularQueueArray.enqueue(1);
+            circularQueueArray.enqueue(6);
+            circularQueueArray.enqueue(8);
+            cout << "Front: " << circularQueueArray.peek() << endl;
+            cout << "Dequeuing: " << circularQueueArray.dequeue() << endl;
+            cout << "Front after dequeue: " << circularQueueArray.peek() << endl;
+            cout << endl;
+
+            StackArray<int> stackArray(4);
+            stackArray.push(1);
+            stackArray.push(2);
+            stackArray.push(3);
+            cout << "Top: " << stackArray.peek() << endl;
+            cout << "Popping: " << stackArray.pop() << endl;
+            cout << "Top after pop: " << stackArray.peek() << endl;
+            cout << endl;
+
+
         } catch (const exception& e) {
             cerr << "Exception: " << e.what() << endl;
 

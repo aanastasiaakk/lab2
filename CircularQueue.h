@@ -59,14 +59,6 @@ public:
     }
 };
 
-template<typename T>
-class Node {
-public:
-    T data;
-    Node* next;
-
-    Node(const T& item) : data(item), next(nullptr) {}
-};
 
 template<typename T>
 class CircularQueueLinkedList {
